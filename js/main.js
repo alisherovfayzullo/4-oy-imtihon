@@ -55,8 +55,10 @@ const deleteBtns = document.querySelectorAll(".delete-btn");
 deleteBtns.forEach((btn) => {
   btn.addEventListener("click", function () {
     const box = this.closest(".box");
-    if (box) {
-      box.remove();
+    if (confirm("Rostdan ham bu modelni o'chirmoqchimisiz?")) {
+      if (box) {
+        box.remove();
+      }
     }
   });
 });

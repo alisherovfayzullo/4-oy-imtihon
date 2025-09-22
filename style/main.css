@@ -68,3 +68,8 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 325px) {
+  #Container {
+    padding: 20px 50px;
+  }
+}
